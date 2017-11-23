@@ -1,5 +1,6 @@
-0.0.1
+
+0.1.0
 =====
-- Enter here some release highlights.
-- Updated translations: John Doo (be), Foo Bar (nl).
-- New translations: Anton (de).
+- First release.
+- Includes most features I had in mind: disable light-locker.
+- Languages available: English.

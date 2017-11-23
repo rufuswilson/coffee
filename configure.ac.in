@@ -1,28 +1,27 @@
 dnl $Id$
 dnl
-dnl xfce4-sample-plugin - A sample plugin for the Xfce panel
+dnl xfce4-coffee-plugin - A XFCE panel plugin for disabling screensavers.
 dnl
-dnl 2017 John Doo <john@foo.org>
+dnl 2017 ModExpEng ltd <modexpeng@gmail.com>
 dnl
 
 dnl ***************************
 dnl *** Version information ***
 dnl ***************************
-m4_define([sample_version_major], [0])
-m4_define([sample_version_minor], [0])
-m4_define([sample_version_micro], [3])
-m4_define([sample_version_nano],  []) dnl leave this empty to have no nano version
-m4_define([sample_version_build], [@REVISION@])
-m4_define([sample_version_tag], [git])
-m4_define([sample_version], [sample_version_major().sample_version_minor().sample_version_micro()ifelse(sample_version_nano(), [], [], [.sample_version_nano()])ifelse(sample_version_tag(), [git], [sample_version_tag()-sample_version_build()], [sample_version_tag()])])
+m4_define([coffee_version_major], [0])
+m4_define([coffee_version_minor], [1])
+m4_define([coffee_version_micro], [0])
+m4_define([coffee_version_nano],  []) dnl leave this empty to have no nano version
+m4_define([coffee_version_build], [@REVISION@])
+m4_define([coffee_version_tag],   [git])
+m4_define([coffee_version], [coffee_version_major().coffee_version_minor().coffee_version_micro()ifelse(coffee_version_nano(), [], [], [.coffee_version_nano()])ifelse(coffee_version_tag(), [git], [coffee_version_tag()-coffee_version_build()], [coffee_version_tag()])])
 
 AC_CONFIG_MACRO_DIR([m4])
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
-AC_COPYRIGHT([Copyright (C) 2017
-        The Xfce development team. All rights reserved.])
-AC_INIT([xfce4-sample-plugin], [sample_version], [https://bugzilla.xfce.org/], [xfce4-sample-plugin])
+AC_COPYRIGHT([Copyright (c) 2017 ModExpEng ltd <modexpeng@gmail.com>])
+AC_INIT([xfce4-coffee-plugin], [coffee_version], [https://bugzilla.xfce.org/], [xfce4-coffee-plugin])
 AC_PREREQ([2.50])
 AC_REVISION([xfce4_panel_version_build])
 
@@ -56,7 +55,11 @@ AC_HEADER_STDC()
 AC_CHECK_HEADERS([stdlib.h unistd.h locale.h stdio.h errno.h time.h string.h \
                   math.h sys/types.h sys/wait.h memory.h signal.h sys/prctl.h \
                   libintl.h])
-AC_CHECK_FUNCS([bind_textdomain_codeset])
+
+dnl ************************************
+dnl *** Check for standard functions ***
+dnl ************************************
+AC_CHECK_FUNCS([])
 
 dnl ******************************
 dnl *** Check for i18n support ***
