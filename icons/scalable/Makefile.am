@@ -2,7 +2,8 @@
 
 iconsdir = $(datadir)/icons/hicolor/scalable/apps
 icons_DATA =								\
-	xfce4-sample-plugin.svg
+	xfce4-coffee-plugin.svg					\
+	xfce4-coffee-plugin-off.svg
 
 EXTRA_DIST =								\
 	$(icons_DATA)

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="512px"
+   height="512px">
+  <defs>
+	  <style>
+		  * {
+			overflow-x: visible;
+			overflow-y: visible;
+			fill:none;
+		  }
+		  path{
+			stroke: #000000;
+			stroke-width: 20;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+		  }
+	  </style>
+  </defs>
+  <rect width="100%" height="100%" style="fill:none;stroke:#000000;stroke-width: 1;" />
+  <g>
+	  <path d="M 40 440 h 430" />
+	  <path d="M 352 240 h -192 l 20 +170 h 152 z m -10 85 m 5 42.5 a 50 50 0 0 0 +10 -100" />
+	  <path style="stroke:none;fill:#000000;" d="M 165 282.5 l 15 +127.5 h 152 l 15 -127.5 z" />
+	  <path d="M 216 210 q -20 -30 0 -60 t 0 -60" />
+	  <path d="M 256 210 q -20 -30 0 -60 t 0 -60" />
+	  <path d="M 296 210 q -20 -30 0 -60 t 0 -60" />
+  </g>
+</svg>
